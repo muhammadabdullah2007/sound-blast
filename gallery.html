@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GALLERY</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  	<!-- News Ticker Style -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+  <link rel="icon" href="images/logo1.png" type="image/png">
+
+  <style>
+    
+    .rounded-circle:hover {
+      border: 4px solid rgb(215, 8, 8);
+      transform: scale(1.1);
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .nav-link :hover {
+      color: red;
+
+    }
+
+    .redbtn:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    .nav-link:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    .nav-link:hover {
+      color: red;
+
+    }
+
+    .fa-brands:hover {
+      transform: scale(1.5);
+      z-index: 3;
+
+    }
+
+    .fa-solid:hover {
+      transform: scale(1.5);
+      z-index: 3;
+    }
+  </style>
+
+</head>
+
+
+<body style=" overflow-x:hidden; background-image: url('images/bg.png');background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+   <!-- ticker -->
+
+
+
+  <!-- Ticker Wrapper -->
+  <div id="ticker-wrapper">
+    <div id="ticker">
+      <div class="ticker-item"><b>🎶 Now Playing: "Blinding Lights" by The Weeknd | </b></div>
+      <div class="ticker-item"><b> 🎸 Upcoming Album Release: "Harmony Echo" by Bella Waves (Release Date: Nov 15, 2024) | </b></div>
+      <div class="ticker-item"><b> 🎧 Live Event: Join us for the Rock Fest 2024 - Tickets available now! | </b></div>
+      <div class="ticker-item"><b> 🔊 Trending: "Eternal Melody" by DJ Astra climbing the charts fast! | </b></div>
+    </div>
+  </div>
+
+ <!-- navbar -->
+ <div style="  z-index:2; background: linear-gradient(rgb(198, 0, 0),rgb(255, 37, 37),black,red);">
+  <nav class="navbar navbar-expand-lg " style="filter: opacity(90%); position: sticky;top: 0px;">
+    <div class="container-fluid" style="background-color: rgb(0, 0, 0);">
+      <img src="images/logo1.png" style="margin-bottom:10px;" alt="" height="100px" width="150px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars fa-beat" style="color: #fb0909;"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center ">
+          <li class="nav-item">
+            <a href="index.html" style="color: rgb(255, 255, 255); font-size: 17px;" class="nav-link  "
+              aria-current="page"><b>Home</b></a>
+
+          <li class="nav-item">
+            <a href="aboutus.html" style="color: aliceblue; font-size: 17px;" class="nav-link" aria-current="page"
+              rel="noopener noreferrer"><b>About us</b></a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html" style="color: aliceblue; font-size: 17x;" class="nav-link" aria-current="page"
+              rel="noopener noreferrer"><b>Contact us</b></a>
+          </li>
+
+
+          <li class="nav-item">
+            <a href="gallery.html" style="color: rgb(254, 6, 6); font-size: 17px;" class="nav-link active" aria-current="page"
+              rel="noopener noreferrer"><b>Gallery</b></a>
+          </li>
+        </ul>
+
+        <!-- <button style="margin-right: 15px;" type="button" class="btn btn-outline-danger" data-aos="flip-left"><a href="login.html"></a> Login</button> -->
+        <div class="text-center">
+          <a href="login.html"><button data-aos="flip-left"  type="button" style="margin-left:3px; margin-right:12px;"
+              class="btn btn-outline-danger"><i class="fa-solid fa-right-to-bracket"></i>
+              Login</button>
+          </a>
+          <button data-aos="flip-left" type="button" style=" margin-left: 3px;margin-right: 12px;"
+            class="btn btn-outline-danger position-relative"><i class="fa-solid fa-users"></i>
+            Users
+            <span id="usercount"
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+  <!-- line -->
+
+  <div style="width: 89%; justify-content: center; margin-top: 70px;" class="mx-auto mt4">
+    <hr size="6" color="red" />
+  </div>
+
+<!-- introduction -->
+
+  <section class=" text-center container" style="color: aliceblue;">
+    <div data-aos="flip-left" class="row py-lg-5" style="color: aliceblue;">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fa-beat"> <b>GALLERY</b></h1>
+        <p class="lead text-body-light ">Music is a collection of coordinated sound or sounds. Making music is the
+          process of putting sounds and tones in an order, often combining them to create a unified composition. People
+          who make music creatively organize sounds for a desired result, like a Beethoven symphony or one of Duke
+          Ellington's jazz songs</p>
+        <p>
+          <button class="btn btn-danger" type="button" style="margin-right: 20px;"><a href="#latestsongs"
+              style="text-decoration:none ; color: black;"> <b> LATEST SONGS</b></a></button>
+
+          <button class="btn btn-danger" type="button"><a href="#latest" style="text-decoration:none ; color: black;">
+              <b> ALBUMS</b></a></button>
+        </p>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+
+<!-- line -->
+  <div style="width: 89%; justify-content: center; margin-top: 70px;" class="mx-auto mt4">
+    <hr size="6" color="red" />
+  </div>
+
+
+
+<!-- latest songs heading -->
+  <div id="latestsongs" class="heading mt-5" data-aos="zoom-in"
+    style="color: aliceblue; display: flex; flex-flow: row wrap; justify-content: center;">
+
+    <h1> <b>LATEST <div style="color: red;display: inline-block ; margin-top: 19px;"><b>SONGS</b></div> </b></h1>
+  </div>
+  <br>
+
+<!-- songs -->
+  <div class="container mx-auto">
+
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/image8.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/song8.mp3" controls></audio>
+      </div>
+    </div>
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/chinise1.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/chinise.mp3" controls></audio>
+      </div>
+    </div>
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/chinise2.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/chinise2.mp3" controls></audio>
+      </div>
+    </div>
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/image.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/generes.mp3" controls></audio>
+      </div>
+    </div>
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/hindi.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/hindi.mp3" controls></audio>
+      </div>
+    </div>
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/japanese2.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/japnese.mp3" controls></audio>
+      </div>
+    </div>
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/sk.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/song.mp3" controls></audio>
+      </div>
+    </div>
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/image2.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/song2.mp3" controls></audio>
+      </div>
+    </div>
+
+
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/image3.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/song3.mp3" controls></audio>
+      </div>
+    </div>
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/image4.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/song4.mp3" controls></audio>
+      </div>
+    </div>
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/image5.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/song5.mp3" controls></audio>
+      </div>
+    </div>
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/image6.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/song6.mp3" controls></audio>
+      </div>
+    </div>
+
+    <div class="row" data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3 mx-auto">
+        <img src="images/image7.png" alt="" width="100" height="100">
+      </div>
+      <div class="col-md-6 my-3 text-center align-content-center mx-auto">
+        <audio class="w-100 mx-auto" src="songs/song7.mp3" controls></audio>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- albums heading -->
+  <div id="latest" class="heading mt-5" data-aos="zoom-in"
+    style="color: aliceblue; display: flex; flex-flow: row wrap; justify-content: center;">
+    <h1> <b><b>ALB</b><div style="color: red;display: inline-block; margin-top: 39px;"><b>UMS</b></div>
+      </b></h1>
+  </div>
+  <br>
+
+
+
+
+  <!-- ALBUMS buttons-->
+
+  <br>
+  <div class="row" style="margin-right: 0px;">
+    
+      <ul class="pagination">
+
+        <li class="page-item   mx-auto btn my-3 " style="background-color: red;"><a
+            class=" btn-danger align-content-center"
+            style=" text-decoration: none;  color: rgb(0, 0, 0); padding-bottom: 0px;" onclick="shoepageLATESTALBUMS()">
+            <b>LATEST ALBUMS</b></a></li>
+        <li class="page-item mx-auto btn my-3" style="background-color: red;"><a
+            class=" btn-danger align-content-center"
+            style=" text-decoration: none;  color: rgb(0, 0, 0); padding-bottom: 0px;"
+            onclick="shoepagePREMIUMALBUMS()"> <b>PREMIUM ALBUMS</b></a></li>
+        <li class="page-item mx-auto btn  my-3" style="background-color: red;"><a
+            class=" btn-danger align-content-center"
+            style=" text-decoration: none;  color: rgb(0, 0, 0); padding-bottom: 0px;"
+            onclick="shoepageSINGLEALBUMS()"><b>REMIX ALBUMS</b></a></li>
+
+      </ul>
+    
+  </div>
+
+  <!-- 1 btn -->
+  <div class="row justify-content-center mt-5" style="display: none; margin-right: 0px;" id="PREMIUMALBUMS">
+    <div id="latest" class="heading" data-aos="zoom-in"
+      style="color: aliceblue; display: flex; flex-flow: row wrap; justify-content: center;">
+      <h1> <b><b>PREMIUM</b>
+          <div style="color: red;display: inline-block; margin-top: 39px;"> <b>ALBUMS</b></div>
+        </b></h1>
+    </div>
+
+<!-- 1 btn detail -->
+    <div class="col-md-3 cards mb-md-0  mt-3 aos-init aos-animate mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>Abbey Road</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album4.jpg"></div>
+
+          <div class="desc">Abbey Road is the eleventh studio album by the English rock band the Beatles, released on 26
+            September 1969, by Apple Records. It is the last album </div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 cards mb-md-0  mt-5 aos-init aos-animate mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>Songs In The Key Of Lives</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album5.jpg">
+          </div>
+
+          <div class="desc">
+            Songs in the Key of Life is the eighteenth studio album by American singer, songwriter and musician Stevie
+            Wonder.</div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 cards mb-md-0  mt-5 aos-init aos-animate mx-auto"data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>Kind Of Blue</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album6.jpg">
+          </div>
+
+          <div class="desc">Kind of Blue is a studio album by the American jazz trumpeter and composer Miles Davis. It
+            was released on August 17, 1959 through Columbia Records </div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+<!-- 2 btn & detail-->
+  <div class="row justify-content-center mt-5 " style="display:none; margin-right: 0px;" id="SINGLEALBUMS">
+
+    <div id="latest" class="heading" data-aos="zoom-in"
+      style="color: aliceblue; display: flex; flex-flow: row wrap; justify-content: center;">
+      <h1> <b><b>REMIX</b>
+          <div style="color: red;display: inline-block; margin-top: 39px;"> <b>ALBUMS</b></div>
+        </b></h1>
+    </div>
+
+    <div class="col-md-3 cards mb-md-0  mt-3 aos-init aos-animate mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>Pet</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album6.jpg"></div>
+
+          <div class="desc">Pet Sounds is the eleventh studio album by the American rock band the Beach Boys, released
+            on May 16, 1966, by Capitol Records. </div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 cards mb-md-0  mt-5 aos-init aos-animate mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>To Pimp a Butterfly</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album7.png">
+          </div>
+
+          <div class="desc">To Pimp a Butterfly is the third studio album by American rapper Kendrick Lamar. It was
+            released on March 15, 2015</div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 cards mb-md-0  mt-5 aos-init aos-animate  mx-auto" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>Enter the Wu-Tang</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album8.jpg">
+          </div>
+
+          <div class="desc">Enter the Wu-Tang (36 Chambers) is the debut studio album by the American hip-hop group
+            Wu-Tang Clan, released on November 9, 1993, </div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+<!-- 3 btn & detail -->
+  <div class="row justify-content-center mt-5" style="margin-right: 0px;" id="LATESTALBUMS">
+
+    <div id="latest" class="heading" data-aos="zoom-in"
+      style="color: aliceblue; display: flex; flex-flow: row wrap; justify-content: center;">
+      <h1> <b><b>LATEST</b>
+          <div style="color: red;display: inline-block; margin-top: 39px;"> <b>ALBUMS</b></div>
+        </b></h1>
+    </div>
+
+    <div class="col-lg-4 col-md-6 cards mb-md-0 mt-5  mx-auto aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>Coke Stodio</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album1.jpg"></div>
+
+          <div class="desc">It features live studio recordings by various artists, showcasing a diverse range of
+            music.</div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 cards mb-md-0  mt-5 mx-auto aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>Ghazals</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album2.jpg">
+          </div>
+
+          <div class="desc">Ghazal is a poetic form consisting of rhyming couplets, usually in Urdu or Persian, and
+            mostly performed solo.</div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 cards mb-md-0  mt-5  mx-auto aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>Spritual</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album3.jpg">
+          </div>
+
+          <div class="desc">A spiritual is a type of religious folksong that is most closely associated with the
+            enslavement of African people . </div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 cards mb-md-0  mt-5 mx-auto aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>Rumours</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album8.png"></div>
+
+          <div class="desc">Rumours is the eleventh studio album by the British-American rock band Fleetwood Mac,
+            released on 4 February 1977, by Warner Bros. Records..</div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 cards mb-md-0  mt-5 mx-auto aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>Supercharged</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album9.png">
+          </div>
+
+          <div class="desc">Supercharged is the eleventh studio album by the American punk rock band the Offspring,
+            released on October 11, 2024 on Concord Records.</div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-6 cards mb-md-0  mt-5 mx-auto aos-init aos-animate" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="card mx-auto">
+        <span class="close"></span>
+        <span class="arrow"></span>
+        <article>
+          <h2>Supercharged</h2>
+          <div class="title">Blast Collection</div>
+          <div class="pic"><img src="images/album7.png">
+          </div>
+
+          <div class="desc">Supercharged is the eleventh studio album by the American punk rock band the Offspring,
+            released on October 11, 2024 on Concord Records.</div>
+
+        </article>
+        <div class="actions">
+          <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+              src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!-- line -->
+  <br><br><br>
+  <div style="width: 89%; justify-content: center; margin-top: 70px;" class="mx-auto mt4">
+    <hr size="6" color="red" />
+  </div>
+  <br><br><br>
+
+
+ <!-- FOOTER -->
+ <div style="background: linear-gradient(rgb(198, 0, 0),rgb(255, 37, 37),black,red);;">
+  <br>
+  <div class="container-fluid" style="background-color: black; filter: opacity(90%)">
+    <div class="contaier">
+
+      <footer class=" text-center row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 border-top "
+        style="background-color: rgb(0, 0, 0);">
+
+
+        <div class="text-center mt-5 fa-beat-fade " data-aos="flip-left "><img src="images/logo1.png " alt=""
+            height="120px" width="120px">
+        </div>
+
+
+
+
+
+        <div class="col mb-3 text-center mt-3">
+          <h5 style="color: aliceblue;" data-aos="flip-left"><b>PAGES</b></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"> <a href="index.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                  class="fa-solid fa-home " style="color: red;">&nbsp;</i>&nbsp;&nbsp;&nbsp;Home</i></a>
+            </li>
+            <li class="nav-item mb-2"> <a href="aboutus.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                  class="fa-solid fa-person" style="color: red;"></i>&nbsp;&nbsp;&nbsp;About Us
+                </i></a> </li>
+            <li class="nav-item mb-2"> <a href="contact.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                  class="fa-solid fa-address-card" style="color: red;"></i>&nbsp;&nbsp;&nbsp;Contact Us
+                </i></a> </li>
+            <li class="nav-item mb-2"> <a href="gallery.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                  class="fa-solid fa-photo-film" style="color: red;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Gallery </i></a>
+            </li>
+            <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: aliceblue;">About</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col mb-3 mx-auto mt-3">
+          <h5 style="color: aliceblue;" data-aos="flip-left"><B>FOLLOW US ON</B></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a
+                href="https://www.google.com/search?q=whatsapp&rlz=1C1UEAD_enPK1112PK1112&oq=whatsapp&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDINCAEQABiDARixAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDIHCAQQABiABDINCAUQABiDARixAxiABDINCAYQABiDARixAxiABDIGCAcQBRhA0gEINDUyN2owajeoAgiwAgE&sourceid=chrome&ie=UTF-8"
+                class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-whatsapp"
+                  style="color:rgb(153, 255, 0);">&nbsp;</i>&nbsp;&nbsp;&nbsp;Whatsapp</a></li>
+            <li class="nav-item mb-2"><a
+                href="https://www.instagram.com/accounts/login/?next=%2Fproud.mp%2Ffeed%2F&source=profile_feed_tab"
+                class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-instagram"
+                  style="color: rgb(144, 61, 98);">&nbsp;</i> &nbsp;&nbsp;&nbsp;Instagram</a></li>
+            <li class="nav-item mb-2"><a href="https://www.facebook.com/?locale2=en_GB&_rdr" class="nav-link p-0 "
+                style="color: aliceblue;"><i class="fa-brands fa-facebook" style="color:blue;">&nbsp;</i>
+                &nbsp;&nbsp;&nbsp;Facebook</a></li>
+            <li class="nav-item mb-2"><a
+                href="https://www.google.com/search?q=twitter+login&rlz=1C1UEAD_enPK1112PK1112&oq=twi&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMgYIARBFGDkyGAgCEC4YQxiDARjHARixAxjRAxiABBiKBTISCAMQABhDGIMBGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyDwgFEAAYQxixAxiABBiKBTIMCAYQABhDGIAEGIoFMgYIBxAFGEDSAQgzNDg0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-x-twitter"
+                  style="color: aliceblue;"> &nbsp;&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;Twitter</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-5 mx-auto mt-3" style="width: 25%;">
+        
+            <h5 style="color: aliceblue; " data-aos="flip-left"><B>CONTACT US</B></h5>
+            <div class="d-flex flex-column mt-5 flex-sm-row gap-2 ">
+              <a class="mx-auto"
+                href="https://www.google.com/search?q=gmail&sca_esv=ac906d086053e2fc&rlz=1C1UEAD_enPK1112PK1112&sxsrf=ADLYWII4GsCVtmhJSWqVSccGpfIIfdwt_A%3A1730357492473&ei=9CgjZ93MHPWFxc8PievnkAk&ved=0ahUKEwjdlrH9g7iJAxX1QvEDHYn1GZIQ4dUDCA8&uact=5&oq=gmail&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWdtYWlsMgoQIxiABBgnGIoFMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyEBAAGIAEGLEDGEMYgwEYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigVIhyNQugNYpiBwA3gAkAEEmAHWAqABnxOqAQUyLTkuMbgBA8gBAPgBAZgCCKACjAuoAhTCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICBRAAGIAEwgIHECMYJxjqAsICFBAAGIAEGJECGLQCGIoFGOoC2AEBwgIUEAAYgAQY4wQYtAIY6QQY6gLYAQHCAgQQIxgnwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBZgDE4gGAZAGCroGBggBEAEYAZIHBzMuMC40LjGgB_VW&sclient=gws-wiz-serp">
+                <button class="btn btn-dark" type="button"><i class="fa-solid fa-message fa-beat"
+                    style="color: #ff0000;"></i></button></a>
+
+            </div>
+      
+        </div>
+
+
+      </footer>
+    </div>
+  </div>
+</div>
+  <!-- second footer -->
+  <div class="text-center py-3" style="background-color: black; margin-bottom: 17px;">
+    <p style="color: aliceblue; margin:0px;"><i style="color: red;margin-bottom: 25px;"
+        class="fa-regular fa-copyright"></i> &nbsp; &nbsp; 2024 SOUND BLAST, Inc. All rights reserved. </p>
+  </div>
+
+
+
+  <!-- btn function -->
+  <script>
+    function shoepageLATESTALBUMS() {
+      var LATESTALBUMS = document.getElementById('LATESTALBUMS');
+      var PREMIUMALBUM = document.getElementById('PREMIUMALBUM');
+      var SINGLEALBUMS = document.getElementById('SINGLEALBUMS');
+      LATESTALBUMS.style.display = "block";
+      PREMIUMALBUMS.style.display = "none";
+      SINGLEALBUMS.style.display = "none";
+
+
+    }
+
+    function shoepagePREMIUMALBUMS() {
+      var LATESTALBUMS = document.getElementById('LATESTALBUMS');
+      var PREMIUMALBUMS = document.getElementById('PREMIUMALBUMS');
+      var SINGLEALBUMS = document.getElementById('SINGLEALBUMS');
+      LATESTALBUMS.style.display = "none";
+      PREMIUMALBUMS.style.display = "block";
+      SINGLEALBUMS.style.display = "none";
+
+    }
+
+    function shoepageSINGLEALBUMS() {
+      var LATESTALBUMS = document.getElementById('LATESTALBUMS');
+      var PREMIUMALBUMS = document.getElementById('PREMIUMALBUMS');
+      var SINGLEALBUMS = document.getElementById('SINGLEALBUMS');
+      LATESTALBUMS.style.display = "none";
+      PREMIUMALBUMS.style.display = "none";
+      SINGLEALBUMS.style.display = "block";
+
+    }
+
+
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script>
+      for (var i = 1; i <= 1424; i++) {
+        (function (index) {
+          setTimeout(function () {
+            document.getElementById('usercount').innerHTML = index;
+          }, index * 7); // 3 seconds interval
+        })(i);
+      }
+</script>
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src=cards.js></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

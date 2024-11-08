@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap-grid.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="images/logo1.png" type="image/png">
+  <!-- News Ticker Style -->
+
+  <style>
+    .rounded-circle:hover {
+      border: 4px solid rgb(215, 8, 8);
+      transform: scale(1.1);
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .nav-link :hover {
+      color: red;
+
+    }
+
+    .redbtn:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    .nav-link:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    .favbrands:hover {
+      color: red;
+
+    }
+
+    .fa-brands:hover {
+      transform: scale(1.5);
+      z-index: 3;
+
+    }
+
+    .fa-solid:hover {
+      transform: scale(1.5);
+      z-index: 3;
+    }
+
+    .accordion-button:focus {
+      outline: none !important;
+      border: 4px solid red;
+    }
+
+    .backBtn {
+      position: fixed;
+      right: 10px;
+      bottom: 70px;
+      z-index: 999;
+
+    }
+
+    .map-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      /* Aspect ratio 16:9 */
+    }
+
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Make the container responsive */
+    .container {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    /* Responsive textarea */
+    textarea {
+      width: 100%;
+      /* Full width of container */
+      max-width: 100%;
+      /* Ensure it doesn't exceed container */
+      min-height: 150px;
+      /* Minimum height */
+      height: auto;
+      /* Allow auto-resizing */
+      resize: vertical;
+      /* Only allow vertical resizing */
+      padding: 10px;
+      box-sizing: border-box;
+      /* Include padding in the element's width and height */
+    }
+  </style>
+
+</head>
+
+
+<body
+  style="  background-image: url( images/bg.png);background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+
+  <!-- ticker -->
+
+
+
+  <!-- Ticker Wrapper -->
+  <div id="ticker-wrapper">
+    <div id="ticker">
+      <div class="ticker-item"><b>🎶 Now Playing: "Blinding Lights" by The Weeknd | </b></div>
+      <div class="ticker-item"><b> 🎸 Upcoming Album Release: "Harmony Echo" by Bella Waves (Release Date: Nov 15, 2024)
+          | </b></div>
+      <div class="ticker-item"><b> 🎧 Live Event: Join us for the Rock Fest 2024 - Tickets available now! | </b></div>
+      <div class="ticker-item"><b> 🔊 Trending: "Eternal Melody" by DJ Astra climbing the charts fast! | </b></div>
+    </div>
+  </div>
+
+
+  <!-- navbar -->
+  <div style="  z-index:2; background: linear-gradient(rgb(198, 0, 0),rgb(255, 37, 37),black,red);">
+    <nav class="navbar navbar-expand-lg " style="filter: opacity(90%); position: sticky;top: 0px;">
+      <div class="container-fluid" style="background-color: rgb(0, 0, 0);">
+        <img src="images/logo1.png" style="margin-bottom:10px;" alt="" height="100px" width="150px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-beat" style="color: #fb0909;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center ">
+            <li class="nav-item">
+              <a href="index.html" style="color: rgb(255, 255, 255); font-size: 17px;" class="nav-link  "
+                aria-current="page"><b>Home</b></a>
+
+            <li class="nav-item">
+              <a href="aboutus.html" style="color: aliceblue; font-size: 17px;" class="nav-link" aria-current="page"
+                rel="noopener noreferrer"><b>About us</b></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contact.html" style="color: rgb(255, 0, 0); font-size: 17x;" class="nav-link active"
+                aria-current="page" rel="noopener noreferrer"><b>Contact us</b></a>
+            </li>
+
+
+            <li class="nav-item">
+              <a href="gallery.html" style="color: aliceblue; font-size: 17px;" class="nav-link" aria-current="page"
+                rel="noopener noreferrer"><b>Gallery</b></a>
+            </li>
+          </ul>
+
+          <!-- <button style="margin-right: 15px;" type="button" class="btn btn-outline-danger" data-aos="flip-left"><a href="login.html"></a> Login</button> -->
+          <div class="text-center">
+            <a href="login.html"><button data-aos="flip-left" type="button" style="margin-left:3px; margin-right:12px;"
+                class="btn btn-outline-danger"><i class="fa-solid fa-right-to-bracket"></i>
+                Login</button>
+            </a>
+            <button data-aos="flip-left" type="button" style=" margin-left: 3px;margin-right: 12px;"
+              class="btn btn-outline-danger position-relative"><i class="fa-solid fa-users"></i>
+              Users
+              <span id="usercount"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="text-center "
+    style="height: 350px; background-image: url(images/image\ copy\ 2.png); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; align-content: center;">
+    <div>
+      <div class="fa-beat" style="color: aliceblue; font-size: 40px;"> <b>Communicate </b> </div>
+      <div class="fa-beat" style="color: aliceblue; font-size: 40px;"> <b>With Us...!</b> </div>
+
+    </div>
+  </div>
+<br><br>
+    <!-- line -->
+    <div style="width: 95%; justify-content: center;" class="mx-auto mt4">
+      <hr size="6" color="red" />
+    </div>
+
+
+  <div class="mx-auto text-center mt-4" style="color: rgb(251, 0, 0); font-size: 45px;"><b><b>Drop Us A Line</b></b>
+  </div>
+  <div class="mx-auto text-center" style="color: rgb(245, 245, 245); font-size: 24px;">"Have questions or feedback? The
+    Sound Blast team would love to hear from you! Whether you're looking for support, partnerships, or just want to say
+    hello, feel free to reach out. Let's make music happen together!"</div>
+
+<div class="row text-center mt-5">
+
+  <div class="col-lg-12 col-md-12 col-sm-12 mx-auto mt-2" style="margin-right: 0px;"><img class="fa-flip" src="images/telephone (2).png" alt="" height="150px" width="150px"></div>
+
+  <div style="color: aliceblue; font-size: 30px; margin-left: 2px;" class=" my-auto mx-auto  mt-2 col-lg-12 col-md-12 col-sm-12"><b>0332371683</b></div>
+
+<!-- line -->
+<div style="width: 35%; justify-content: center;" class="mx-auto mt-4 fa-fade">
+  <hr size="6" color="red" />
+</div>
+
+  <div class="col-lg-12 col-md-12 col-sm-12 mx-auto mt-5" style="margin-right: 0px;"><img class="fa-flip" src="images/email (2).png" alt="" height="150px" width="150px"></div>
+
+  <div style="color: aliceblue; font-size: 30px; margin-left: 2px;" class=" my-auto mx-auto  mt-2 col-lg-12 col-md-12 col-sm-12"><b>blast@gmail.com</b></div>
+
+<!-- line -->
+<div style="width: 35%; justify-content: center;" class="mx-auto mt-4 fa-fade">
+  <hr size="6" color="red" />
+</div>
+
+  <div class="col-lg-12 col-md-12 col-sm-12 mx-auto mt-5" style="margin-right: 0px;"><img class="fa-flip" src="images/location.png" alt="" height="150px" width="150px"></div>
+
+  <div style="color: aliceblue; font-size: 25px; margin-left: 2px;" class=" my-auto mx-auto  mt-2 col-lg-12 col-md-12 col-sm-12"><b>11-A st-45 near BRT station</b></div>
+</div>
+  
+   <!-- line -->
+   <div style="width: 95%; justify-content: center;" class="mx-auto mt-5">
+    <hr size="6" color="red" />
+  </div>
+
+
+    <div class=" container text-center  mt-5 col-lg-6 col-md-12 col-sm-12"
+      style=" background-color: rgba(0, 0, 0, 0.767); font-size: 45px;  color: aliceblue;"><b><b>Send Message</b></b>
+      <div class="mt-3 text-center" style="font-size: 17px;">
+        <input type="text" name="" id="" placeholder="Your name" style="width: 89%;"> <br> <br>
+        <input type="email" name="" id="" placeholder="email" style="width: 89%;"> <br><br>
+        <div class="container">
+          <textarea placeholder="Type your message / suggetion here..."></textarea>
+        </div> <br>
+        <button class="mb-3 mt-2 btn btn-danger text-center mx-auto " style="width: 90%;" type="submit">Send</button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class=" mt-5 map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24503.964397705608!2d67.03364713926364!3d24.983771449317086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e584b891c3%3A0x29b2cbc198ba2dbd!2sAptech%20Computer%20Education%20North%20Karachi%20Center!5e0!3m2!1sen!2s!4v1730692772498!5m2!1sen!2s"
+        width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+
+  <!-- line -->
+
+  <div style="width: 89%; justify-content: center; margin-top: 50px;" class="mx-auto mt4">
+    <hr size="6" color="red" />
+  </div>
+  <div></div>
+
+  <!-- FOOTER -->
+  <div style="background: linear-gradient(rgb(198, 0, 0),rgb(255, 37, 37),black,red);;">
+    <br>
+    <div class="container-fluid" style="background-color: black; filter: opacity(90%)">
+      <div class="contaier">
+
+        <footer class=" text-center row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 border-top "
+          style="background-color: rgb(0, 0, 0);">
+
+
+          <div class="text-center mt-5 fa-beat-fade " data-aos="flip-left "><img src="images/logo1.png " alt=""
+              height="120px" width="120px">
+          </div>
+
+
+
+
+
+          <div class="col mb-3 text-center mt-3">
+            <h5 style="color: aliceblue;" data-aos="flip-left"><b>PAGES</b></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"> <a href="index.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-home " style="color: red;">&nbsp;</i>&nbsp;&nbsp;&nbsp;Home</i></a>
+              </li>
+              <li class="nav-item mb-2"> <a href="aboutus.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-person" style="color: red;"></i>&nbsp;&nbsp;&nbsp;About Us
+                  </i></a> </li>
+              <li class="nav-item mb-2"> <a href="contact.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-address-card" style="color: red;"></i>&nbsp;&nbsp;&nbsp;Contact Us
+                  </i></a> </li>
+              <li class="nav-item mb-2"> <a href="gallery.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-photo-film" style="color: red;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Gallery </i></a>
+              </li>
+              <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: aliceblue;">About</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col mb-3 mx-auto mt-3">
+            <h5 style="color: aliceblue;" data-aos="flip-left"><B>FOLLOW US ON</B></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a
+                  href="https://www.google.com/search?q=whatsapp&rlz=1C1UEAD_enPK1112PK1112&oq=whatsapp&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDINCAEQABiDARixAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDIHCAQQABiABDINCAUQABiDARixAxiABDINCAYQABiDARixAxiABDIGCAcQBRhA0gEINDUyN2owajeoAgiwAgE&sourceid=chrome&ie=UTF-8"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-whatsapp"
+                    style="color:rgb(153, 255, 0);">&nbsp;</i>&nbsp;&nbsp;&nbsp;Whatsapp</a></li>
+              <li class="nav-item mb-2"><a
+                  href="https://www.instagram.com/accounts/login/?next=%2Fproud.mp%2Ffeed%2F&source=profile_feed_tab"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-instagram"
+                    style="color: rgb(144, 61, 98);">&nbsp;</i> &nbsp;&nbsp;&nbsp;Instagram</a></li>
+              <li class="nav-item mb-2"><a href="https://www.facebook.com/?locale2=en_GB&_rdr" class="nav-link p-0 "
+                  style="color: aliceblue;"><i class="fa-brands fa-facebook" style="color:blue;">&nbsp;</i>
+                  &nbsp;&nbsp;&nbsp;Facebook</a></li>
+              <li class="nav-item mb-2"><a
+                  href="https://www.google.com/search?q=twitter+login&rlz=1C1UEAD_enPK1112PK1112&oq=twi&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMgYIARBFGDkyGAgCEC4YQxiDARjHARixAxjRAxiABBiKBTISCAMQABhDGIMBGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyDwgFEAAYQxixAxiABBiKBTIMCAYQABhDGIAEGIoFMgYIBxAFGEDSAQgzNDg0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-x-twitter"
+                    style="color: aliceblue;"> &nbsp;&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;Twitter</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-md-5 mx-auto mt-3" style="width: 25%;">
+
+            <h5 style="color: aliceblue; " data-aos="flip-left"><B>CONTACT US</B></h5>
+            <div class="d-flex flex-column mt-5 flex-sm-row gap-2 ">
+              <a class="mx-auto"
+                href="https://www.google.com/search?q=gmail&sca_esv=ac906d086053e2fc&rlz=1C1UEAD_enPK1112PK1112&sxsrf=ADLYWII4GsCVtmhJSWqVSccGpfIIfdwt_A%3A1730357492473&ei=9CgjZ93MHPWFxc8PievnkAk&ved=0ahUKEwjdlrH9g7iJAxX1QvEDHYn1GZIQ4dUDCA8&uact=5&oq=gmail&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWdtYWlsMgoQIxiABBgnGIoFMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyEBAAGIAEGLEDGEMYgwEYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigVIhyNQugNYpiBwA3gAkAEEmAHWAqABnxOqAQUyLTkuMbgBA8gBAPgBAZgCCKACjAuoAhTCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICBRAAGIAEwgIHECMYJxjqAsICFBAAGIAEGJECGLQCGIoFGOoC2AEBwgIUEAAYgAQY4wQYtAIY6QQY6gLYAQHCAgQQIxgnwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBZgDE4gGAZAGCroGBggBEAEYAZIHBzMuMC40LjGgB_VW&sclient=gws-wiz-serp">
+                <button class="btn btn-dark" type="button"><i class="fa-solid fa-message fa-beat"
+                    style="color: #ff0000;"></i></button></a>
+
+            </div>
+
+          </div>
+
+
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- second footer -->
+  <div class="text-center py-3" style="background-color: black; margin-bottom: 17px;">
+    <p style="color: aliceblue; margin:0px;"><i style="color: red;margin-bottom: 25px;"
+        class="fa-regular fa-copyright"></i> &nbsp; &nbsp; 2024 SOUND BLAST, Inc. All rights reserved. </p>
+  </div>
+<script src="bootstrap-5.3.3-dist/js/bootstrap.esm.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+
+
+
+    for (var i = 1; i <= 1424; i++) {
+      (function (index) {
+        setTimeout(function () {
+          document.getElementById('usercount').innerHTML = index;
+        }, index * 7); // 3 seconds interval
+      })(i);
+    }
+  </script>
+  <script src="cards.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

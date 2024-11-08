@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SOUND BLAST</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="cards.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="images/logo1.png" type="image/png">
+
+  <!-- News Ticker Style -->
+
+  <style>
+    .rounded-circle:hover {
+      border: 4px solid rgb(215, 8, 8);
+      transform: scale(1.1);
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .nav-link :hover {
+      color: red;
+
+    }
+
+    .redbtn:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    .nav-link:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    .favbrands:hover {
+      color: red;
+
+    }
+
+    .fa-brands:hover {
+      transform: scale(1.5);
+      z-index: 3;
+
+    }
+
+    .fa-solid:hover {
+      transform: scale(1.5);
+      z-index: 3;
+    }
+
+    .accordion-button:focus {
+      outline: none !important;
+      border: 4px solid red;
+    }
+
+   
+  </style>
+
+</head>
+
+
+<body
+  style="  background-image: url( images/bg.png);background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+
+  <!-- ticker -->
+
+
+
+  <!-- Ticker Wrapper -->
+  <div id="ticker-wrapper">
+    <div id="ticker">
+      <div class="ticker-item"><b>🎶 Now Playing: "Blinding Lights" by The Weeknd | </b></div>
+      <div class="ticker-item"><b> 🎸 Upcoming Album Release: "Harmony Echo" by Bella Waves (Release Date: Nov 15, 2024)
+          | </b></div>
+      <div class="ticker-item"><b> 🎧 Live Event: Join us for the Rock Fest 2024 - Tickets available now! | </b></div>
+      <div class="ticker-item"><b> 🔊 Trending: "Eternal Melody" by DJ Astra climbing the charts fast! | </b></div>
+    </div>
+  </div>
+
+ 
+
+  <!-- navbar -->
+  <div style="  z-index:2; background: linear-gradient(rgb(198, 0, 0),rgb(255, 37, 37),black,red);">
+    <nav class="navbar navbar-expand-lg " style="filter: opacity(90%); position: sticky;top: 0px;">
+      <div class="container-fluid" style="background-color: rgb(0, 0, 0);">
+        <img src="images/logo1.png" style="margin-bottom:10px;" alt="" height="100px" width="150px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-beat" style="color: #fb0909;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center ">
+            <li class="nav-item">
+              <a href="index.html" style="color: rgb(252, 4, 4); font-size: 17px;" class="nav-link active "
+                aria-current="page"><b>Home</b></a>
+
+            <li class="nav-item">
+              <a href="aboutus.html" style="color: aliceblue; font-size: 17px;" class="nav-link" aria-current="page"
+                rel="noopener noreferrer"><b>About us</b></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contact.html" style="color: aliceblue; font-size: 17x;" class="nav-link" aria-current="page"
+                rel="noopener noreferrer"><b>Contact us</b></a>
+            </li>
+
+
+            <li class="nav-item">
+              <a href="gallery.html" style="color: aliceblue; font-size: 17px;" class="nav-link" aria-current="page"
+                rel="noopener noreferrer"><b>Gallery</b></a>
+            </li>
+          </ul>
+
+          <!-- <button style="margin-right: 15px;" type="button" class="btn btn-outline-danger" data-aos="flip-left"><a href="login.html"></a> Login</button> -->
+          <div class="text-center " style="display: contents;">
+            <div class="fa-shake mt-2">
+              <a href="login.html"><button data-aos="flip-left" type="button"
+                  style="margin-left:3px; margin-right:12px;" class="btn btn-outline-danger"><i
+                    class="fa-solid fa-right-to-bracket"></i>
+                  Login</button>
+              </a>
+            </div>
+            <div class="mt-2">
+              <button data-aos="flip-left" type="button" style=" margin-left: 3px;margin-right: 12px;"
+                class="btn btn-outline-danger position-relative"><i class="fa-solid fa-users"></i>
+                Users
+                <span id="usercount"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid mx-auto" style="margin: 0px 0px; padding:0px 0px;">
+    <div class="text-center "
+      style="height: 450px; background-image: url(images/b4.png); background-attachment: fixed; background-size: cover; background-repeat: no-repeat; align-content: center;">
+      <div class="container">
+        <div class="container">
+          <div class="fa-beat my-auto" style="color: aliceblue; font-size: 40px;"> <b>Hi.. So Glad </b> </div>
+          <div></div>
+          <p class="fa-beat my-auto" style="color: aliceblue; font-size: 40px;"> <b>You Found Us...!</b></p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <br><br><br>
+
+    <!-- line -->
+    <div style="width: 95%; justify-content: center;" class="mx-auto mt4">
+      <hr size="6" color="red" />
+    </div>
+
+    <br><br><br>
+
+    <!-- heading -->
+    <div class="container">
+      <div class="heading mt-5 mx-auto text-center"
+        style="color: aliceblue; display: flex; flex-flow: row wrap; justify-content: center;font-size:60px; "
+        data-aos="zoom-in" data-aos-duration="1000">
+        <b>Premium <div class=" mx-auto" style="color: red;display: inline-block;"> Albums</div> </b>
+      </div>
+
+      <!--three CARDS -->
+
+
+      <div id="button" class="row text-center" style="margin-right: 0px;">
+
+        <div class="col-lg-4 col-md-6 col-sm-12 cards mb-md-0 mt-4  mx-auto aos-init aos-animate"
+          style="padding-left:0px ; padding-right:0px ; padding-top:0px ; padding-bottom: 0px;" data-aos="zoom-in"
+          data-aos-duration="1000">
+          <div class="card mx-auto">
+            <span class="close"></span>
+            <span class="arrow"></span>
+            <article>
+              <h2>Coke Stodio</h2>
+              <div class="title">Bug Collector</div>
+              <div class="pic"><img src="images/album1.jpg"></div>
+
+              <div class="desc">It features live studio recordings by various artists, showcasing a diverse range of
+                music.</i></div>
+
+            </article>
+            <div class="actions">
+              <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+                  src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 cards mb-md-0 mt-4  mx-auto aos-init aos-animate"
+          style="padding-left:0px ; padding-right:0px ; padding-top:0px ; padding-bottom: 0px;" data-aos="zoom-in"
+          data-aos-duration="1000">
+          <div class="card mx-auto">
+            <span class="close"></span>
+            <span class="arrow"></span>
+            <article>
+              <h2>Ghazals</h2>
+              <div class="title">Ant Collector</div>
+              <div class="pic"><img src="images/album2.jpg">
+              </div>
+
+              <div class="desc">Ghazal is a poetic form consisting of rhyming couplets, usually in Urdu or Persian, and
+                mostly performed solo.</div>
+
+            </article>
+            <div class="actions">
+              <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+                  src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 cards mb-md-0 mt-4  mx-auto aos-init aos-animate"
+          style="padding-left:0px ; padding-right:0px ; padding-top:0px ; padding-bottom: 0px;" data-aos="zoom-in"
+          data-aos-duration="1000">
+          <div class="card mx-auto">
+            <span class="close"></span>
+            <span class="arrow"></span>
+            <article>
+              <h2>Spritual</h2>
+              <div class="title">Fly Collector</div>
+              <div class="pic"><img src="images/album3.jpg">
+              </div>
+
+              <div class="desc">A spiritual is a type of religious folksong that is most closely associated with the
+                enslavement of African people . </div>
+
+            </article>
+            <div class="actions">
+              <button class="btn" style="width: 100%;"><span>like</span><img class="icon"
+                  src="https://rafaelavlucas.github.io/assets/icons/black/icon-123.svg"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- line -->
+    <div style="width: 70%; justify-content: center; margin-top: 70px;" class="mx-auto mt4">
+      <hr size="6" color="red" />
+    </div>
+
+    <!-- major 9 songs -->
+
+    <div id="aboutus" class="container row mx-auto text-center" style="margin-top: 70px;">
+      <div class="col-lg-4 mx-auto " data-aos="zoom-out">
+        <img src="images/card1.jpg" class="rounded-circle" style="width:160px; height:150px;" alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;">Trending Now</i></h2>
+
+        <p> <a href="card1.html" class="btn btn-danger" data-aos="flip-left" style="margin-bottom: 60px;"
+            rel="noopener noreferrer">View all »</a></p>
+      </div>
+
+
+
+      <div class="col-lg-4 mx-auto" data-aos="zoom-out">
+        <img src="images/card2.png" class="rounded-circle" style="width:160px; height:150px;" alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;">Top Charts</i></h2>
+
+        <p> <a href="card2.html" class="btn btn-danger" data-aos="flip-left" style="margin-bottom: 60px;"
+            rel="noopener noreferrer">View all »</a></p>
+      </div>
+
+
+
+      <div class="col-lg-4 mx-auto" data-aos="zoom-out">
+        <img src="images/card3.jpg" class="rounded-circle" style="width:160px; height:150px;" alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;"> New Releases</i> </h2>
+
+        <p> <a href="card3.html" class="btn btn-danger" data-aos="flip-left" style="margin-bottom: 60px;"
+            rel="noopener noreferrer">View all »</a></p>
+      </div>
+
+
+
+      <div style="width: 70%; justify-content: center; margin-bottom: 60px;" class="mx-auto mt4">
+        <hr size="6" color="red" />
+      </div>
+
+      <div class="col-lg-4 mx-auto" data-aos="zoom-out">
+        <img src="images/card4.jpg" class="rounded-circle" style="width:160px; height:150px;" alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;">Lateset Albums</i></h2>
+
+        <p> <a href="card4.html" class="btn btn-danger" data-aos="flip-left" style="margin-bottom: 60px;"
+            rel="noopener noreferrer">View all »</a></p>
+      </div>
+
+      <div class="col-lg-4 mx-auto" data-aos="zoom-out">
+        <img src="images/card5.jpg" class="rounded-circle" style="width:160px; height:150px;" alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;">Genres</i></h2>
+
+        <p> <a href="card5.html" class="btn btn-danger" data-aos="flip-left" style="margin-bottom: 60px;"
+            rel="noopener noreferrer">View all »</a></p>
+      </div>
+
+
+
+      <div class="col-lg-4 mx-auto" data-aos="zoom-out">
+        <img src="images/card6.jpg" class="rounded-circle" style="width:160px; height:150px;" alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;">Old Songs</i></h2>
+
+        <p> <a href="card6.html" class="btn btn-danger" data-aos="flip-left" style="margin-bottom: 60px;"
+            rel="noopener noreferrer">View all »</a></p>
+      </div>
+
+
+
+
+      <div style="width: 70%; justify-content: center; margin-bottom: 60px; " class="mx-auto mt4">
+        <hr size="6" color="red" />
+      </div>
+
+      <div class="col-lg-4 mx-auto" data-aos="zoom-out">
+        <img src="images/card7.jpg" class="rounded-circle" style="width:160px; height:150px;" alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;">Top Artists</i></h2>
+
+        <p> <a href="card7.html" class="btn btn-danger" data-aos="flip-left" style="margin-bottom: 60px;"
+            rel="noopener noreferrer">View all »</a></p>
+      </div>
+
+      <div class="col-lg-4 mx-auto" data-aos="zoom-out">
+        <img src="images/card8.jpg" class="rounded-circle" style="width:160px; height:150px;" alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;">Top Searched Songs</i></h2>
+
+        <p> <a href="card8.html" class="btn btn-danger" data-aos="flip-left" style="margin-bottom: 60px;"
+            rel="noopener noreferrer">View all »</a></p>
+      </div>
+
+
+
+      <div class="col-lg-4 mx-auto" data-aos="zoom-out">
+        <img src="images/card9.jpg" class="rounded-circle" style="width:160px; height:150px;  " alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;">Languages</i></h2>
+
+        <p> <a href="card9.html" class="btn btn-danger" data-aos="flip-left" style="margin-bottom: 60px;"
+            rel="noopener noreferrer">View all »</a></p>
+      </div>
+    </div>
+
+
+    <!-- line -->
+    <br>
+    <div style="width: 89%; justify-content: center; margin-top: 70px;" class="mx-auto mt4">
+      <hr size="6" color="red" />
+    </div>
+
+    <!-- accordian heading -->
+    <div class="heading mt-5 "
+      style="color: aliceblue; display: flex; flex-flow: row wrap; justify-content: center;font-size:60px; "
+      data-aos="zoom-in" data-aos-duration="800">
+      <b>Frequently Asked <div style="color: red;display: inline-block;"> Questions</div> </b>
+    </div>
+    <!-- accordian -->
+    <div class="container" data-aos="zoom-out" data-aos-duration="1000">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item" style="background-color: transparent;color: aliceblue;">
+          <h2 class="accordion-header ">
+            <button class=" accordion-button" type="button" data-bs-toggle="collapse" accordion-border-color:#{ rgb(252,
+              4, 4)};data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+              style="background-color: transparent; color: aliceblue;">
+              <b> What are 4 facts about music?</b>
+
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong> 4 Amazing Facts about Music and Musicians That You'll Love.</strong> <br>
+              <ul>
+                <li> Plants can grow faster if music is playing. ... </li>
+                <li> The oldest known musical instrument is 50,000 years old. ...</li>
+                <li> A Canadian astronaut released an album of songs all recorded in space. ... </li>
+                <li>The Beatles didn't know how to read or write sheet music.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" style="background-color: transparent; color: aliceblue;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+              style="background-color: transparent;color: aliceblue;">
+              Why is music so important?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Music improves your health and wellbeing
+                .</strong> Music stimulates the brain which in turn helps with pain relief, reducing stress and memory.
+              A
+              study from Harvard has shown that relaxing music may lower blood pressure and heart rate after physical
+              exertion.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" style="background-color: transparent; color: aliceblue;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+              style="background-color: transparent;color: aliceblue;">
+              What is music made for?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Social events and religious ceremony</strong>Music often plays a key role in social events and
+              religious ceremony. The techniques of making music are often transmitted as part of a cultural tradition.
+              Music is played in public and private contexts, highlighted at events such as festivals and concerts for
+              various different types of ensembles.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" style="background-color: transparent; color: aliceblue;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseTwo"
+              style="background-color: transparent;color: aliceblue;">
+              What is the role of music?
+
+            </button>
+          </h2>
+          <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Music accomplishes many things. It has practical utility that can be applied to many endeavors, it can be
+              used to communicate information and emotions, it plays a substantial role in culture, it provides
+              entertainment, it gives people an outlet to be creative, it helps us understand beauty, and it has value
+              on
+              its own.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="accordion-item" style="background-color: transparent; color: aliceblue;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseTwo"
+              style="background-color: transparent;color: aliceblue;">
+              Why music is good in life?
+            </button>
+          </h2>
+          <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>It provides a total brain workout.
+                .</strong>If you want to keep your brain engaged throughout the aging process, listening to or playing
+              music is a great tool. It provides a total brain workout. Research has shown that listening to music can
+              reduce anxiety, blood pressure, and pain as well as improve sleep quality, mood, mental alertness, and
+              memory.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+  <!-- line -->
+
+  <div style="width: 89%; justify-content: center; margin-top: 70px;" class="mx-auto mt4">
+    <hr size="6" color="red" />
+  </div>
+  <BR><BR><BR></BR></BR></BR>
+
+  <!-- FOOTER -->
+  <div style="background: linear-gradient(rgb(198, 0, 0),rgb(255, 37, 37),black,red);;">
+    <br>
+    <div class="container-fluid" style="background-color: black; filter: opacity(90%)">
+      <div class="contaier">
+
+        <footer class=" text-center row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 border-top "
+          style="background-color: rgb(0, 0, 0);">
+
+
+          <div class="text-center mt-5 fa-beat-fade " data-aos="flip-left "><img src="images/logo1.png " alt=""
+              height="120px" width="120px">
+          </div>
+
+
+
+
+
+          <div class="col mb-3 text-center mt-3">
+            <h5 style="color: aliceblue;" data-aos="flip-left"><b>PAGES</b></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"> <a href="index.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-home " style="color: red;">&nbsp;</i>&nbsp;&nbsp;&nbsp;Home</i></a>
+              </li>
+              <li class="nav-item mb-2"> <a href="aboutus.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-person" style="color: red;"></i>&nbsp;&nbsp;&nbsp;About Us
+                  </i></a> </li>
+              <li class="nav-item mb-2"> <a href="contact.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-address-card" style="color: red;"></i>&nbsp;&nbsp;&nbsp;Contact Us
+                  </i></a> </li>
+              <li class="nav-item mb-2"> <a href="gallery.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-photo-film" style="color: red;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Gallery </i></a>
+              </li>
+              <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: aliceblue;">About</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col mb-3 mx-auto mt-3">
+            <h5 style="color: aliceblue;" data-aos="flip-left"><B>FOLLOW US ON</B></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a
+                  href="https://www.google.com/search?q=whatsapp&rlz=1C1UEAD_enPK1112PK1112&oq=whatsapp&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDINCAEQABiDARixAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDIHCAQQABiABDINCAUQABiDARixAxiABDINCAYQABiDARixAxiABDIGCAcQBRhA0gEINDUyN2owajeoAgiwAgE&sourceid=chrome&ie=UTF-8"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-whatsapp"
+                    style="color:rgb(153, 255, 0);">&nbsp;</i>&nbsp;&nbsp;&nbsp;Whatsapp</a></li>
+              <li class="nav-item mb-2"><a
+                  href="https://www.instagram.com/accounts/login/?next=%2Fproud.mp%2Ffeed%2F&source=profile_feed_tab"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-instagram"
+                    style="color: rgb(144, 61, 98);">&nbsp;</i> &nbsp;&nbsp;&nbsp;Instagram</a></li>
+              <li class="nav-item mb-2"><a href="https://www.facebook.com/?locale2=en_GB&_rdr" class="nav-link p-0 "
+                  style="color: aliceblue;"><i class="fa-brands fa-facebook" style="color:blue;">&nbsp;</i>
+                  &nbsp;&nbsp;&nbsp;Facebook</a></li>
+              <li class="nav-item mb-2"><a
+                  href="https://www.google.com/search?q=twitter+login&rlz=1C1UEAD_enPK1112PK1112&oq=twi&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMgYIARBFGDkyGAgCEC4YQxiDARjHARixAxjRAxiABBiKBTISCAMQABhDGIMBGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyDwgFEAAYQxixAxiABBiKBTIMCAYQABhDGIAEGIoFMgYIBxAFGEDSAQgzNDg0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-x-twitter"
+                    style="color: aliceblue;"> &nbsp;&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;Twitter</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-md-5 mx-auto mt-3" style="width: 25%;">
+
+            <h5 style="color: aliceblue; " data-aos="flip-left"><B>CONTACT US</B></h5>
+            <div class="d-flex flex-column mt-5 flex-sm-row gap-2 ">
+              <a class="mx-auto"
+                href="https://www.google.com/search?q=gmail&sca_esv=ac906d086053e2fc&rlz=1C1UEAD_enPK1112PK1112&sxsrf=ADLYWII4GsCVtmhJSWqVSccGpfIIfdwt_A%3A1730357492473&ei=9CgjZ93MHPWFxc8PievnkAk&ved=0ahUKEwjdlrH9g7iJAxX1QvEDHYn1GZIQ4dUDCA8&uact=5&oq=gmail&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWdtYWlsMgoQIxiABBgnGIoFMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyEBAAGIAEGLEDGEMYgwEYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigVIhyNQugNYpiBwA3gAkAEEmAHWAqABnxOqAQUyLTkuMbgBA8gBAPgBAZgCCKACjAuoAhTCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICBRAAGIAEwgIHECMYJxjqAsICFBAAGIAEGJECGLQCGIoFGOoC2AEBwgIUEAAYgAQY4wQYtAIY6QQY6gLYAQHCAgQQIxgnwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBZgDE4gGAZAGCroGBggBEAEYAZIHBzMuMC40LjGgB_VW&sclient=gws-wiz-serp">
+                <button class="btn btn-dark" type="button"><i class="fa-solid fa-message fa-beat"
+                    style="color: #ff0000;"></i></button></a>
+
+            </div>
+
+          </div>
+
+
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- second footer -->
+  <div class="text-center py-3" style="background-color: black; margin-bottom: 17px;">
+    <p style="color: aliceblue; margin:0px;"><i style="color: red;margin-bottom: 25px;"
+        class="fa-regular fa-copyright"></i> &nbsp; &nbsp; 2024 SOUND BLAST, Inc. All rights reserved. </p>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    for (var i = 1; i <= 1424; i++) {
+      (function (index) {
+        setTimeout(function () {
+          document.getElementById('usercount').innerHTML = index;
+        }, index * 7); // 3 seconds interval
+      })(i);
+    }
+  </script>
+  <script src="cards.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+
+</html>

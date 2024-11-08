@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABOUT US</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="cards.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="images/logo1.png" type="image/png">
+  <style>
+    .rounded-circle:hover {
+      border: 4px solid rgb(215, 8, 8);
+      transform: scale(1.1);
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .nav-link :hover {
+      color: red;
+
+    }
+
+    .redbtn:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    .nav-item:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    .favbrands:hover {
+      color: red;
+
+    }
+
+    .fa-brands:hover {
+      transform: scale(1.5);
+      z-index: 3;
+
+    }
+
+    .fa-solid:hover {
+      transform: scale(1.5);
+      z-index: 3;
+    }
+  </style>
+
+</head>
+
+<body
+  style=" background-image: url( images/bg.png);background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+
+ <!-- ticker -->
+
+
+
+  <!-- Ticker Wrapper -->
+  <div id="ticker-wrapper">
+    <div id="ticker">
+      <div class="ticker-item"><b>🎶 Now Playing: "Blinding Lights" by The Weeknd | </b></div>
+      <div class="ticker-item"><b> 🎸 Upcoming Album Release: "Harmony Echo" by Bella Waves (Release Date: Nov 15, 2024) | </b></div>
+      <div class="ticker-item"><b> 🎧 Live Event: Join us for the Rock Fest 2024 - Tickets available now! | </b></div>
+      <div class="ticker-item"><b> 🔊 Trending: "Eternal Melody" by DJ Astra climbing the charts fast! | </b></div>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <div style="  z-index:2; background: linear-gradient(rgb(198, 0, 0),rgb(255, 37, 37),black,red);">
+    <nav class="navbar navbar-expand-lg " style="filter: opacity(90%); position: sticky;top: 0px;">
+      <div class="container-fluid" style="background-color: rgb(0, 0, 0);">
+        <img src="images/logo1.png" style="margin-bottom:10px;" alt="" height="100px" width="150px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-beat" style="color: #fb0909;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center ">
+            <li class="nav-item">
+              <a href="index.html" style="color: rgb(244, 244, 244); font-size: 17px;" class="nav-link  "
+                aria-current="page"><b>Home</b></a>
+
+            <li class="nav-item">
+              <a href="aboutus.html" style="color: rgb(250, 3, 3); font-size: 17px;" class="nav-link active "
+                aria-current="page" rel="noopener noreferrer"><b>About us</b></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contact.html" style="color: aliceblue; font-size: 17x;" class="nav-link" aria-current="page"
+                rel="noopener noreferrer"><b>Contact us</b></a>
+            </li>
+
+
+            <li class="nav-item">
+              <a href="gallery.html" style="color: aliceblue; font-size: 17px;" class="nav-link" aria-current="page"
+                rel="noopener noreferrer"><b>Gallery</b></a>
+            </li>
+          </ul>
+
+          <!-- <button style="margin-right: 15px;" type="button" class="btn btn-outline-danger" data-aos="flip-left"><a href="login.html"></a> Login</button> -->
+          <div class="text-center">
+            <a href="login.html"><button data-aos="flip-left" type="button" style="margin-left:3px; margin-right:12px;"
+                class="btn btn-outline-danger"><i class="fa-solid fa-right-to-bracket"></i>
+                Login</button>
+            </a>
+            <button data-aos="flip-left" type="button" style=" margin-left: 3px;margin-right: 12px;"
+              class="btn btn-outline-danger position-relative"><i class="fa-solid fa-users"></i>
+              Users
+              <span id="usercount"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <section class=" text-center container" style="color: aliceblue;">
+    <div data-aos="flip-left" class="row py-lg-5" style="color: aliceblue;">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <div class="fa-beat mt-4" data-aos="flip-left" style="font-size: 75px;"> What We <div
+            style="color: red; display: inline-block;">Do
+          </div>
+        </div>
+        <p class="lead text-body-light ">Welcome to [SOUND BLAST], your
+          ultimate destination for music lovers! We are passionate about connecting artists and fans in one vibrant
+          space.
+          Here, you can discover a diverse range of genres that inspire and uplift. Explore new sounds, from emerging
+          talents to timeless classics, and find your next favorite track. Join our community and share your own musical
+          journey with fellow enthusiasts. Stay updated with the latest trends, playlists, and exclusive content.
+          Together, let’s celebrate the power of music to unite us all. Dive in and let the melodies take you on an
+          unforgettable adventure!</p>
+        <p>
+          <button class="btn btn-danger" type="button" style="margin-right: 20px;"><a href="#people"
+              style="text-decoration:none ; color: black;"> <b> REVIEWS</b></a></button>
+
+          <button class="btn btn-danger" type="button"><a href="#quality" style="text-decoration:none ; color: black;">
+              <b>OUR QUALITIES</b></a></button>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- three cards -->
+  <div class="container marketing">
+
+    <!-- Three columns  below the carousel -->
+    <div class="row text-center" style="margin-top: 80px;" data-aos="zoom-out">
+      <div class="col-lg-4 mx-auto mt-5">
+        <img src="images/imag1.jpg" class="rounded-circle" style="width:160px; height:150px;" alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;">LATEST SONGS</h2>
+        <p></p>
+        <p><a class="btn btn-danger" data-aos="flip-left" href="card1.html">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center mt-5" data-aos="zoom-out">
+        <img src="images/card4.jpg" class="rounded-circle" style="width:160px; height:150px;" alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;">ALBUMS</h2>
+        <p></p>
+        <p><a class="btn btn-danger" data-aos="flip-left" href="gallery.html">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center mt-5" data-aos="zoom-out">
+        <img src="images/card7.jpg" class="rounded-circle" style="width:160px; height:150px;" alt="">
+        <h2 class="fw-normal mt-4" style="color: aliceblue;">TOP ARTIST</h2>
+        <p></p>
+        <p><a class="btn btn-danger" data-aos="flip-left" href="card7.html">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <!-- line -->
+    <div style="width: 70%; justify-content: center; margin-top: 70px;" class="mx-auto mt4">
+      <hr size="6" color="red" />
+    </div>
+    <!-- qualities heading -->
+    <div class="heading mt-5 " id="quality"
+      style="color: aliceblue; display: flex; flex-flow: row wrap; justify-content: center;font-size:60px; "
+      data-aos="zoom-in">
+      <b>Why Choose <div style="color: red;display: inline-block;">Us</div> </b>
+    </div>
+
+    <!-- three qualities -->
+    <div class="row featurette " style="margin-top: 160px; color: aliceblue;">
+      <div class="col-md-6 mx-auto my-auto" data-aos="flip-left">
+        <h1> <b> We Hand Over Multiplicity Of </b></h1>
+        <h1 style="color: red;"><b>Songs</b></h1>
+        <br><br>
+        <p>Stay updated with the latest songs that are making waves in the music scene! Our collection features the
+          hottest tracks across all genres, from chart-toppers to fresh releases. Whether you're looking for catchy
+          pop
+          anthems, soulful ballads, or energetic beats, you'll find the perfect soundtrack for every moment. Check out
+          what's trending and elevate your playlist today!</p>
+
+      </div>
+      <div class="col-md-5 text-center" data-aos="flip-left">
+        <img src="images/one-removebg-preview.png" alt="">
+      </div>
+    </div>
+    <!-- 
+    <div class="d-grid gap-2 col-6 mx-auto mt-5 songs">
+      <button class="btn btn-danger" type="button">View details</button>
+    </div> -->
+    <br>
+    <!-- line -->
+    <div style="width: 70%; justify-content: center;" class="mx-auto mt4">
+      <hr size="6" color="red" />
+    </div>
+
+    <div class="row featurette " style="margin-top: 160px; color: aliceblue;">
+      <div class="col-md-6 mx-auto " data-aos="flip-left">
+        <h1><b>We Also Hand Over Variety Of </b></h1>
+        <h1 style="color: red;"><b>Albums</b></h1>
+        <br><br>
+        <p>
+          Explore our diverse collection of music albums, showcasing everything from chart-topping hits to hidden
+          gems.
+          Each album offers a unique sonic journey, allowing you to discover new sounds and revisit classic favorites.
+          Whether you’re a fan of pop, rock, jazz, or indie, our curated selection has something for every music
+          lover.
+          Dive in and find your next favorite album today!</p>
+
+      </div>
+      <div class="col-md-5 text-center" data-aos="flip-left">
+        <img src="images/about11.jpg" alt="" height="350px" width="350px">
+      </div>
+    </div>
+
+    <br><br>
+    <!-- line -->
+    <div style="width: 70%; justify-content: center; margin-top: 70px;" class="mx-auto mt4">
+      <hr size="6" color="red" />
+    </div>
+
+    <div class="row featurette " style="margin-top: 160px; color: aliceblue;">
+      <div class="col-md-6 mx-auto " data-aos="flip-left">
+        <h1> <b> We Also Provide Online</b></h1>
+        <h1 style="color: red;"><b>Concert Tickets</b></h1>
+        <br><br>
+        <p>
+          Join us for exhilarating online music concerts! Enjoy live performances from your favorite artists and
+          discover new talent, all from the comfort of home. With high-quality streaming and interactive features,
+          connect with fellow fans and immerse yourself in the magic of live music. Don’t miss out!</p>
+
+      </div>
+      <div class="col-md-5 text-center" data-aos="flip-left">
+        <img src="images/three3.jpg" alt="" height="350px" width="350px">
+      </div>
+    </div>
+    <!-- <div class="text-center"> <a href="#button"><button type="button" class="btn btn-outline-danger">PREMIUM ALBUMS</button></a></div> -->
+  </div>
+
+  <!-- line -->
+  <div style="width: 70%; justify-content: center; margin-top: 70px;" class="mx-auto mt4">
+    <hr size="6" color="red" />
+  </div>
+
+
+
+  </main>
+
+
+  <!-- reviews -->
+  <div class="heading mt-5 mx-auto " id="people"
+    style="color: aliceblue; display: flex; flex-flow: row wrap; justify-content: center;font-size:60px; "
+    data-aos="zoom-in">
+    <b>What People Think <br>
+      <div style="color: red; text-align: center;">About Us</div>
+    </b>
+  </div>
+  <br><br>
+
+  <!-- people reviews -->
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators ">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="height: 500px;">
+        <div class="text-center mt-5" data-aos="flip-left">
+          <img src="images/review1.jpg" class="rounded-circle " height="185px" width="190px" alt="">
+        </div>
+        <div class="text-center" style="color: aliceblue;">
+          <h2><b> </b> </h2>
+        </div>
+        <div class="container text-center mt-5" style="color: aliceblue; font-size: 20px;">
+          <div class="my-5">
+            <h2><b>"Hanery" </b></h2>
+          </div>
+          It was a very excellent experience to be in! The musicians were extremely talented and were also very
+          funny!!!
+          Thank God I noticed the music and concert feedback of (Sound Blast) and decided to go there.
+        </div>
+      </div>
+      <div class="carousel-item " style="height: 500px;">
+        <div class="text-center mt-5" data-aos="flip-left">
+          <img src="images/review2.jpg" class="rounded-circle " height="185px" width="190px" alt="">
+        </div>
+        <div class="text-center" style="color: aliceblue;">
+          <h2><b> </b> </h2>
+        </div>
+        <div class="container text-center mt-5" style="color: aliceblue; font-size: 20px;">
+          <div class="my-5">
+            <h2><b>"Mickel" </b></h2>
+          </div>
+          "SOUND BLAST is the obvious answer. Because it is user driven it means that you can curate the content you
+          consume however you want. This is most easily done via following users who share tastes with you and do high
+          quality reviews. There are plenty of those people out there, it's just a matter of finding them. Therefore
+          the
+          website gets more rewarding the more/longer you use it for!"
+        </div>
+      </div>
+      <div class="carousel-item " style="height: 500px;">
+        <div class="text-center mt-5" data-aos="flip-left">
+          <img src="images/review3.jpg" class="rounded-circle " height="185px" width="190px" alt="">
+        </div>
+        <div class="text-center" style="color: aliceblue;">
+          <h2><b> </b> </h2>
+        </div>
+        <div class="container text-center mt-5" style="color: aliceblue; font-size: 20px;">
+          <div class="my-5">
+            <h2><b>"David" </b></h2>
+          </div>
+          "I recently tried out Sound Blast, and it blew me away! The platform's impressive array of audio content
+          kept
+          me captivated from start to finish. Navigating through playlists and discovering new sounds was a breeze,
+          thanks to its user-friendly design. The crystal-clear audio quality truly brings every beat to life, making
+          my
+          listening sessions unforgettable. Overall, Sound Blast is a must-try for anyone wanting to enhance their
+          audio
+          experience!"
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span style="color: red;" class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <div style="background: linear-gradient(rgb(198, 0, 0),rgb(255, 37, 37),black,red);;">
+    <br>
+    <div class="container-fluid" style="background-color: black; filter: opacity(90%)">
+      <div class="contaier">
+
+        <footer class=" text-center row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 border-top "
+          style="background-color: rgb(0, 0, 0);">
+
+
+          <div class="text-center mt-5 fa-beat-fade " data-aos="flip-left "><img src="images/logo1.png " alt=""
+              height="120px" width="120px">
+          </div>
+
+
+
+
+
+          <div class="col mb-3 text-center mt-3">
+            <h5 style="color: aliceblue;" data-aos="flip-left"><b>PAGES</b></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"> <a href="index.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-home " style="color: red;">&nbsp;</i>&nbsp;&nbsp;&nbsp;Home</i></a>
+              </li>
+              <li class="nav-item mb-2"> <a href="aboutus.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-person" style="color: red;"></i>&nbsp;&nbsp;&nbsp;About Us
+                  </i></a> </li>
+              <li class="nav-item mb-2"> <a href="contact.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-address-card" style="color: red;"></i>&nbsp;&nbsp;&nbsp;Contact Us
+                  </i></a> </li>
+              <li class="nav-item mb-2"> <a href="gallery.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                    class="fa-solid fa-photo-film" style="color: red;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Gallery </i></a>
+              </li>
+              <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: aliceblue;">About</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col mb-3 mx-auto mt-3">
+            <h5 style="color: aliceblue;" data-aos="flip-left"><B>FOLLOW US ON</B></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a
+                  href="https://www.google.com/search?q=whatsapp&rlz=1C1UEAD_enPK1112PK1112&oq=whatsapp&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDINCAEQABiDARixAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDIHCAQQABiABDINCAUQABiDARixAxiABDINCAYQABiDARixAxiABDIGCAcQBRhA0gEINDUyN2owajeoAgiwAgE&sourceid=chrome&ie=UTF-8"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-whatsapp"
+                    style="color:rgb(153, 255, 0);">&nbsp;</i>&nbsp;&nbsp;&nbsp;Whatsapp</a></li>
+              <li class="nav-item mb-2"><a
+                  href="https://www.instagram.com/accounts/login/?next=%2Fproud.mp%2Ffeed%2F&source=profile_feed_tab"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-instagram"
+                    style="color: rgb(144, 61, 98);">&nbsp;</i> &nbsp;&nbsp;&nbsp;Instagram</a></li>
+              <li class="nav-item mb-2"><a href="https://www.facebook.com/?locale2=en_GB&_rdr" class="nav-link p-0 "
+                  style="color: aliceblue;"><i class="fa-brands fa-facebook" style="color:blue;">&nbsp;</i>
+                  &nbsp;&nbsp;&nbsp;Facebook</a></li>
+              <li class="nav-item mb-2"><a
+                  href="https://www.google.com/search?q=twitter+login&rlz=1C1UEAD_enPK1112PK1112&oq=twi&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMgYIARBFGDkyGAgCEC4YQxiDARjHARixAxjRAxiABBiKBTISCAMQABhDGIMBGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyDwgFEAAYQxixAxiABBiKBTIMCAYQABhDGIAEGIoFMgYIBxAFGEDSAQgzNDg0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                  class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-x-twitter"
+                    style="color: aliceblue;"> &nbsp;&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;Twitter</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-md-5 mx-auto mt-3" style="width: 25%;">
+          
+              <h5 style="color: aliceblue; " data-aos="flip-left"><B>CONTACT US</B></h5>
+              <div class="d-flex flex-column mt-5 flex-sm-row gap-2 ">
+                <a class="mx-auto"
+                  href="https://www.google.com/search?q=gmail&sca_esv=ac906d086053e2fc&rlz=1C1UEAD_enPK1112PK1112&sxsrf=ADLYWII4GsCVtmhJSWqVSccGpfIIfdwt_A%3A1730357492473&ei=9CgjZ93MHPWFxc8PievnkAk&ved=0ahUKEwjdlrH9g7iJAxX1QvEDHYn1GZIQ4dUDCA8&uact=5&oq=gmail&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWdtYWlsMgoQIxiABBgnGIoFMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyEBAAGIAEGLEDGEMYgwEYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigVIhyNQugNYpiBwA3gAkAEEmAHWAqABnxOqAQUyLTkuMbgBA8gBAPgBAZgCCKACjAuoAhTCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICBRAAGIAEwgIHECMYJxjqAsICFBAAGIAEGJECGLQCGIoFGOoC2AEBwgIUEAAYgAQY4wQYtAIY6QQY6gLYAQHCAgQQIxgnwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBZgDE4gGAZAGCroGBggBEAEYAZIHBzMuMC40LjGgB_VW&sclient=gws-wiz-serp">
+                  <button class="btn btn-dark" type="button"><i class="fa-solid fa-message fa-beat"
+                      style="color: #ff0000;"></i></button></a>
+
+              </div>
+        
+          </div>
+
+
+        </footer>
+      </div>
+    </div>
+  </div>
+  <!-- second footer -->
+  <div class="text-center py-3" style="background-color: black; margin-bottom: 17px;">
+    <p style="color: aliceblue; margin:0px;"><i style="color: red;margin-bottom: 25px;"
+        class="fa-regular fa-copyright"></i> &nbsp; &nbsp; 2024 SOUND BLAST, Inc. All rights reserved. </p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    for (var i = 1; i <= 1424; i++) {
+      (function (index) {
+        setTimeout(function () {
+          document.getElementById('usercount').innerHTML = index;
+        }, index * 7); // 3 seconds interval
+      })(i);
+    }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="cards.js"></script>
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

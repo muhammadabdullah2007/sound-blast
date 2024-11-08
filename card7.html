@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOP ARTISTS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="cards.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="images/logo1.png" type="image/png">
+  <style>
+    .rounded-circle:hover {
+      border: 4px solid rgb(215, 8, 8);
+      transform: scale(1.1);
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    .nav-link :hover {
+      color: red;
+
+    }
+
+    .redbtn:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    .nav-link:hover {
+      color: rgb(255, 0, 0);
+    }
+
+    .nav-link:hover {
+      color: red;
+
+    }
+    .fa-brands:hover {
+      transform: scale(1.5);
+      z-index: 3;
+
+    }
+
+    .fa-solid:hover {
+      transform: scale(1.5);
+      z-index: 3;
+    }
+  </style>
+
+</head>
+
+
+<body
+style="background-image: url( images/bg.png);background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+  <!-- navbar -->
+  <div style=" z-index:2; background: linear-gradient(rgb(198, 0, 0),rgb(255, 37, 37),black,red);">
+    <nav class="navbar navbar-expand-lg " style="filter: opacity(90%); position: sticky;top: 0px;">
+      <div class="container-fluid" style="background-color: rgb(0, 0, 0);">
+        <img src="images/logo1.png" style="margin-bottom:10px;" alt="" height="100px" width="150px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars fa-beat" style="color: #fb0909;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center ">
+            <li class="nav-item">
+              <a href="index.html" style="color: rgb(255, 0, 0); font-size: 17px;" class="nav-link active "
+                aria-current="page"><b>Home</b></a>
+
+            <li class="nav-item">
+              <a href="aboutus.html" style="color: rgb(255, 255, 255); font-size: 17px;" class="nav-link " aria-current="page"
+                rel="noopener noreferrer"><b>About us</b></a>
+            </li>
+
+            <li class="nav-item">
+              <a href="contact.html" style="color: aliceblue; font-size: 17x;" class="nav-link" aria-current="page"
+                rel="noopener noreferrer"><b>Contact us</b></a>
+            </li>
+
+
+            <li class="nav-item">
+              <a href="gallery.html" style="color: aliceblue; font-size: 17px;" class="nav-link" aria-current="page"
+                rel="noopener noreferrer"><b>Gallery</b></a>
+            </li>
+          </ul>
+
+          <!-- <button style="margin-right: 15px;" type="button" class="btn btn-outline-danger" data-aos="flip-left"><a href="login.html"></a> Login</button> -->
+          <div class="text-center">
+            <a href="login.html"><button data-aos="flip-left"  type="button" style="margin-left:3px; margin-right:12px;"
+                class="btn btn-outline-danger"><i class="fa-solid fa-right-to-bracket"></i>
+                Login</button>
+            </a>
+            <button data-aos="flip-left" type="button" style=" margin-left: 3px;margin-right: 12px;"
+              class="btn btn-outline-danger position-relative"><i class="fa-solid fa-users"></i>
+              Users
+              <span id="usercount"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="heading mt-5 " style="color: aliceblue; display: flex; flex-flow: row wrap; justify-content: center;"   data-aos="zoom-in">
+    <h1> <b>TOP <div style="color: red;display: inline-block;">ARTISTS</div> </b></h1>
+  </div>
+   <!-- line -->
+   <div style="width: 89%; justify-content: center; margin-top: 70px;" class="mx-auto mt4">
+    <hr size="6" color="red" />
+  </div>
+  <br><br>
+
+
+  <div class="container" >
+
+    <div class="row"  data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3">
+        <img src="images/image3.png" alt="" width="100" height="100">
+      </div>
+
+      <div class="col-md-2 text-center align-content-center">
+        <p style="color: aliceblue;"><b>By; &nbsp;</b>Karan Aujla<br> <b>&</b> <br>Vicky Kaushal</p>
+      </div>
+
+      <div class="col-md-6 my-3 text-center align-content-center">
+        <audio class="w-100" src="songs/song3.mp3" controls></audio>
+      </div>
+
+      <div class="col-md-2 text-center align-content-center my-auto " style="background-color: black">
+        <a href="songs/song3.mp3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="aliceblue" class="bi bi-download"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
+
+
+    <div class="row"  data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3">
+        <img src="images/sk.png" alt="" width="100" height="100">
+      </div>
+
+      <div class="col-md-2 text-center align-content-center">
+        <p style="color: aliceblue;"><b>By; &nbsp;</b>Shahid Kapoor<br> <b></b> <br></p>
+      </div>
+
+      <div class="col-md-6 my-3 text-center align-content-center">
+        <audio class="w-100" src="songs/song4.mp3" controls></audio>
+      </div>
+
+      <div class="col-md-2 text-center align-content-center my-auto " style="background-color: black">
+        <a href="songs/song3.mp3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="aliceblue" class="bi bi-download"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="row"  data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3">
+        <img src="images/image3.png" alt="" width="100" height="100">
+      </div>
+
+      <div class="col-md-2 text-center align-content-center">
+        <p style="color: aliceblue;"><b>By; &nbsp;</b>Karan Aujla<br> <b>&</b> <br>Vicky Kaushal</p>
+      </div>
+
+      <div class="col-md-6 my-3 text-center align-content-center">
+        <audio class="w-100" src="songs/song3.mp3" controls></audio>
+      </div>
+
+      <div class="col-md-2 text-center align-content-center my-auto " style="background-color: black">
+        <a href="songs/song3.mp3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="aliceblue" class="bi bi-download"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="row"  data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3">
+        <img src="images/sk.png" alt="" width="100" height="100">
+      </div>
+
+      <div class="col-md-2 text-center align-content-center">
+        <p style="color: aliceblue;"><b>By; &nbsp;</b>Shahid Kapoor<br> <b></b> <br></p>
+      </div>
+
+      <div class="col-md-6 my-3 text-center align-content-center">
+        <audio class="w-100" src="songs/song4.mp3" controls></audio>
+      </div>
+
+      <div class="col-md-2 text-center align-content-center my-auto " style="background-color: black">
+        <a href="songs/song3.mp3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="aliceblue" class="bi bi-download"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="row"  data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3">
+        <img src="images/image3.png" alt="" width="100" height="100">
+      </div>
+
+      <div class="col-md-2 text-center align-content-center">
+        <p style="color: aliceblue;"><b>By; &nbsp;</b>Karan Aujla<br> <b>&</b> <br>Vicky Kaushal</p>
+      </div>
+
+      <div class="col-md-6 my-3 text-center align-content-center">
+        <audio class="w-100" src="songs/song3.mp3" controls></audio>
+      </div>
+
+      <div class="col-md-2 text-center align-content-center my-auto " style="background-color: black">
+        <a href="songs/song3.mp3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="aliceblue" class="bi bi-download"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="row"  data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3">
+        <img src="images/sk.png" alt="" width="100" height="100">
+      </div>
+
+      <div class="col-md-2 text-center align-content-center">
+        <p style="color: aliceblue;"><b>By; &nbsp;</b>Shahid Kapoor<br> <b></b> <br></p>
+      </div>
+
+      <div class="col-md-6 my-3 text-center align-content-center">
+        <audio class="w-100" src="songs/song4.mp3" controls></audio>
+      </div>
+
+      <div class="col-md-2 text-center align-content-center my-auto " style="background-color: black">
+        <a href="songs/song3.mp3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="aliceblue" class="bi bi-download"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="row"  data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3">
+        <img src="images/image3.png" alt="" width="100" height="100">
+      </div>
+
+      <div class="col-md-2 text-center align-content-center">
+        <p style="color: aliceblue;"><b>By; &nbsp;</b>Karan Aujla<br> <b>&</b> <br>Vicky Kaushal</p>
+      </div>
+
+      <div class="col-md-6 my-3 text-center align-content-center">
+        <audio class="w-100" src="songs/song3.mp3" controls></audio>
+      </div>
+
+      <div class="col-md-2 text-center align-content-center my-auto " style="background-color: black">
+        <a href="songs/song3.mp3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="aliceblue" class="bi bi-download"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="row"  data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3">
+        <img src="images/sk.png" alt="" width="100" height="100">
+      </div>
+
+      <div class="col-md-2 text-center align-content-center">
+        <p style="color: aliceblue;"><b>By; &nbsp;</b>Shahid Kapoor<br> <b></b> <br></p>
+      </div>
+
+      <div class="col-md-6 my-3 text-center align-content-center">
+        <audio class="w-100" src="songs/song4.mp3" controls></audio>
+      </div>
+
+      <div class="col-md-2 text-center align-content-center my-auto " style="background-color: black">
+        <a href="songs/song3.mp3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="aliceblue" class="bi bi-download"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="row"  data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3">
+        <img src="images/image3.png" alt="" width="100" height="100">
+      </div>
+
+      <div class="col-md-2 text-center align-content-center">
+        <p style="color: aliceblue;"><b>By; &nbsp;</b>Karan Aujla<br> <b>&</b> <br>Vicky Kaushal</p>
+      </div>
+
+      <div class="col-md-6 my-3 text-center align-content-center">
+        <audio class="w-100" src="songs/song3.mp3" controls></audio>
+      </div>
+
+      <div class="col-md-2 text-center align-content-center my-auto " style="background-color: black">
+        <a href="songs/song3.mp3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="aliceblue" class="bi bi-download"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="row"  data-aos="zoom-in-up">
+      <div class="col-md-2 text-center my-3">
+        <img src="images/sk.png" alt="" width="100" height="100">
+      </div>
+
+      <div class="col-md-2 text-center align-content-center">
+        <p style="color: aliceblue;"><b>By; &nbsp;</b>Shahid Kapoor<br> <b></b> <br></p>
+      </div>
+
+      <div class="col-md-6 my-3 text-center align-content-center">
+        <audio class="w-100" src="songs/song4.mp3" controls></audio>
+      </div>
+
+      <div class="col-md-2 text-center align-content-center my-auto " style="background-color: black">
+        <a href="songs/song3.mp3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="aliceblue" class="bi bi-download"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+ 
+
+
+  
+
+
+
+
+
+
+  <!-- line -->
+  <br><br><br>
+  <div style="width: 89%; justify-content: center; margin-top: 70px;" class="mx-auto mt4">
+    <hr size="6" color="red" />
+  </div>
+  <br><br><br>
+
+ <!-- FOOTER -->
+ <div style="background: linear-gradient(rgb(198, 0, 0),rgb(255, 37, 37),black,red);;">
+  <br>
+  <div class="container-fluid" style="background-color: black; filter: opacity(90%)">
+    <div class="contaier">
+
+      <footer class=" text-center row row-cols-1 row-cols-sm-2 row-cols-md-5 pt-5 border-top "
+        style="background-color: rgb(0, 0, 0);">
+
+
+        <div class="text-center mt-5 fa-beat-fade " data-aos="flip-left "><img src="images/logo1.png " alt=""
+            height="120px" width="120px">
+        </div>
+
+
+
+
+
+        <div class="col mb-3 text-center mt-3">
+          <h5 style="color: aliceblue;" data-aos="flip-left"><b>PAGES</b></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"> <a href="index.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                  class="fa-solid fa-home " style="color: red;">&nbsp;</i>&nbsp;&nbsp;&nbsp;Home</i></a>
+            </li>
+            <li class="nav-item mb-2"> <a href="aboutus.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                  class="fa-solid fa-person" style="color: red;"></i>&nbsp;&nbsp;&nbsp;About Us
+                </i></a> </li>
+            <li class="nav-item mb-2"> <a href="contact.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                  class="fa-solid fa-address-card" style="color: red;"></i>&nbsp;&nbsp;&nbsp;Contact Us
+                </i></a> </li>
+            <li class="nav-item mb-2"> <a href="gallery.html" class="nav-link p-0 " style="color: aliceblue;"></i><i
+                  class="fa-solid fa-photo-film" style="color: red;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Gallery </i></a>
+            </li>
+            <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 " style="color: aliceblue;">About</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col mb-3 mx-auto mt-3">
+          <h5 style="color: aliceblue;" data-aos="flip-left"><B>FOLLOW US ON</B></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a
+                href="https://www.google.com/search?q=whatsapp&rlz=1C1UEAD_enPK1112PK1112&oq=whatsapp&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDINCAEQABiDARixAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDIHCAQQABiABDINCAUQABiDARixAxiABDINCAYQABiDARixAxiABDIGCAcQBRhA0gEINDUyN2owajeoAgiwAgE&sourceid=chrome&ie=UTF-8"
+                class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-whatsapp"
+                  style="color:rgb(153, 255, 0);">&nbsp;</i>&nbsp;&nbsp;&nbsp;Whatsapp</a></li>
+            <li class="nav-item mb-2"><a
+                href="https://www.instagram.com/accounts/login/?next=%2Fproud.mp%2Ffeed%2F&source=profile_feed_tab"
+                class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-instagram"
+                  style="color: rgb(144, 61, 98);">&nbsp;</i> &nbsp;&nbsp;&nbsp;Instagram</a></li>
+            <li class="nav-item mb-2"><a href="https://www.facebook.com/?locale2=en_GB&_rdr" class="nav-link p-0 "
+                style="color: aliceblue;"><i class="fa-brands fa-facebook" style="color:blue;">&nbsp;</i>
+                &nbsp;&nbsp;&nbsp;Facebook</a></li>
+            <li class="nav-item mb-2"><a
+                href="https://www.google.com/search?q=twitter+login&rlz=1C1UEAD_enPK1112PK1112&oq=twi&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMgYIARBFGDkyGAgCEC4YQxiDARjHARixAxjRAxiABBiKBTISCAMQABhDGIMBGLEDGIAEGIoFMg8IBBAAGEMYsQMYgAQYigUyDwgFEAAYQxixAxiABBiKBTIMCAYQABhDGIAEGIoFMgYIBxAFGEDSAQgzNDg0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                class="nav-link p-0 " style="color: aliceblue;"><i class="fa-brands fa-x-twitter"
+                  style="color: aliceblue;"> &nbsp;&nbsp;&nbsp;&nbsp;</i>&nbsp;&nbsp;&nbsp;Twitter</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-5 mx-auto mt-3" style="width: 25%;">
+        
+            <h5 style="color: aliceblue; " data-aos="flip-left"><B>CONTACT US</B></h5>
+            <div class="d-flex flex-column mt-5 flex-sm-row gap-2 ">
+              <a class="mx-auto"
+                href="https://www.google.com/search?q=gmail&sca_esv=ac906d086053e2fc&rlz=1C1UEAD_enPK1112PK1112&sxsrf=ADLYWII4GsCVtmhJSWqVSccGpfIIfdwt_A%3A1730357492473&ei=9CgjZ93MHPWFxc8PievnkAk&ved=0ahUKEwjdlrH9g7iJAxX1QvEDHYn1GZIQ4dUDCA8&uact=5&oq=gmail&gs_lp=Egxnd3Mtd2l6LXNlcnAiBWdtYWlsMgoQIxiABBgnGIoFMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyEBAAGIAEGLEDGEMYgwEYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigVIhyNQugNYpiBwA3gAkAEEmAHWAqABnxOqAQUyLTkuMbgBA8gBAPgBAZgCCKACjAuoAhTCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICBRAAGIAEwgIHECMYJxjqAsICFBAAGIAEGJECGLQCGIoFGOoC2AEBwgIUEAAYgAQY4wQYtAIY6QQY6gLYAQHCAgQQIxgnwgIWEC4YgAQYsQMY0QMYQxiDARjHARiKBZgDE4gGAZAGCroGBggBEAEYAZIHBzMuMC40LjGgB_VW&sclient=gws-wiz-serp">
+                <button class="btn btn-dark" type="button"><i class="fa-solid fa-message fa-beat"
+                    style="color: #ff0000;"></i></button></a>
+
+            </div>
+      
+        </div>
+
+
+      </footer>
+    </div>
+  </div>
+</div>
+  <!-- second footer -->
+  <div class="text-center py-3" style="background-color: black; margin-bottom: 17px;">
+    <p style="color: aliceblue; margin:0px;"><i style="color: red;margin-bottom: 25px;"
+        class="fa-regular fa-copyright"></i> &nbsp; &nbsp; 2024 SOUND BLAST, Inc. All rights reserved. </p>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+      <script>
+        for (var i = 1; i <= 1424; i++) {
+          (function (index) {
+            setTimeout(function () {
+              document.getElementById('usercount').innerHTML = index;
+            }, index * 7); // 3 seconds interval
+          })(i);
+        }
+  </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="cards.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+</body>
+
+</html>
